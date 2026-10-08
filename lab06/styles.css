@@ -1,0 +1,27 @@
+h1 {color:forestgreen;}
+/* yes, em's change font size */
+p {
+    font-size: 2em;
+    font-family: Georgia, "Times New Roman", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    text-decoration: wavy;
+}
+
+p {color:steelblue;}
+
+p a{color:darkolivegreen;}
+#forever {
+            color:darkcyan;
+            text-decoration: none;
+        }
+p a{text-decoration:none;}
+.doublesize {font-size: 2em;}
+.poop {font-family: 'Courier New', Courier, monospace;}
+
+body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+h1, h2 {color:chocolate}
+.odd{background-color:black; color: whitesmoke;}
+/* i know odds and evens are reversed */
+.even{background-color:mediumblue}
+h1 {size:2em}
+h2 {size:1.5em}
