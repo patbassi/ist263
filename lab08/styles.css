@@ -1,0 +1,14 @@
+
+body{
+   background-color: #E9F0C9; 
+   color: #20130A}
+text {color:#20130A}
+a:link {color: #3B657A}
+a:visited {color: #123142}
+a:hover {color: red}
+a:active {color: purple}
+nav{background-color: #E9F0C9;}
+nav a{color: #123142;}
+nav a:hover{background-color: #3B657A;}
+nav{padding: 10px;}
+nav {margin-bottom: 30px}
