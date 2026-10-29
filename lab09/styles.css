@@ -11,7 +11,7 @@ nav{background-color: #E9F0C9;}
 nav a{color: #123142;}
 nav a:hover{background-color: #3B657A;}
 nav{padding: 10px;}
-nav {margin-bottom: 30px}
+nav {margin-bottom: 30px; background-color: bisque;}
 
             @media only screen and (max-width: 500px) {
             nav a {display: block; max-width: 100%;} 
