@@ -6,8 +6,9 @@
     <meta charset = "utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /*.head {text-align: center;}
-        .head {flex: 3; order: 4; margin: 25px;}
+        /*
+        .head {text-align: center;}
+        .head {flex: 3; order: 4; margin: 25px; animation: flashColors 1s steps(1) infinite;}
         .part1 {flex: 1; order: 1;}
 		.part2 {flex: 1; order: 2;}
         .part3 {flex: 1; order: 3;}
@@ -21,7 +22,20 @@
             .img2 {flex: 1; order: 2;}
             .img3 {flex: 1; order: 3;}
 
-            .heading {display: flex; background-color: #cce5ff; border-radius: 5em;}*/
+            .heading {display: flex; background-color: #cce5ff; border-radius: 1em;}
+            
+            @keyframes flashColors {
+  0%   { color: rgb(231, 13, 115); }
+  50%  { color: yellow;}
+  100% { color: rgb(231, 13, 115); }
+}
+
+.flashing-text {
+  font-size: 2rem;
+  font-weight: bold;
+  animation: flashColors 1s infinite;
+}
+            */
 		</style>
     </head>
     <body>
