@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JS Quiz</title>
+
+    <script>
+        function rightAnswer (){
+    document.getElementById("right").innerHTML = '<span style="color:green;">false is the correct answer</span>';
+        }
+        function wrongAnswer (){
+    document.getElementById("wrong").innerHTML = '<span style="color:red;"true is the wrong answer</span>';
+        }
+    </script>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <h1>JS Quiz</h1>
+    <p>Java and JS are the same thing.</p>
+    <p id="wrong" onclick="wrongAnswer();">True</p>
+    <p id="right" onclick="rightAnswer();">False</p>
+
+    
+
+
+</body>
+</html>

@@ -6,24 +6,79 @@
     <meta charset = "utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /*
-        .head {text-align: center;}
-        .head {flex: 3; order: 4; margin: 25px; animation: flashColors 1s steps(1) infinite;}
-        .part1 {flex: 1; order: 1;}
-		.part2 {flex: 1; order: 2;}
-        .part3 {flex: 1; order: 3;}
+        
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
-            .logo1 {flex: 1; order: 5; margin: 25px;}
-            .logo2 {flex: 1; order: 6; margin: 25px;}
-            .logo3 {flex: 1; order: 7; margin: 25px;}
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 0 auto;
 
-            .images {display: flex; margin: 1em; gap: 1em;}
+    background-color: #cce5ff;
+    border: 2px solid black;
+    border-radius: 1em;
+}
+
+.head {
+    text-align: center;
+    flex: 2;
+    margin: 10px;
+    font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+    animation: flashColors 1s steps(1) infinite;
+}
+
+.part1, .part2, .part3 {
+    flex: 1;
+    text-align: center;
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    text-decoration: none;
+    min-width: 0;
+}
+
+.logo1, .logo2, .logo3 {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin: 10px;
+}
+
+@media (max-width: 700px) {
+    .images {
+        flex-direction: column;
+    }
+
+    .images img {
+        width: 100%;
+        height: auto;
+    }
+
+    .texts {
+        flex-direction: column;
+    }
+}
+.banner {
+    display: block;
+    width: 100%;
+    height: auto;
+}
             .img1 {flex: 1 - 1em; order: 1;}
             .img2 {flex: 1; order: 2;}
             .img3 {flex: 1; order: 3;}
 
-            .heading {display: flex; background-color: #cce5ff; border-radius: 1em;}
+            .texts {display: flex; margin: 1em; gap: 1em;}
+            .t1 {flex: 1; order: 1;}
+            .t2 {flex: 1; order: 2;}
+            .t3 {flex: 1; order: 3;}
+
+            .heading {display: flex; align-items: flex-start;width: 100%; height: auto; background-color: #cce5ff; border-radius: 1em;}
             
+            img { max-width: 100%; height: auto; }
+            header { max-width: 100%; height: auto; }
+
             @keyframes flashColors {
   0%   { color: rgb(231, 13, 115); }
   50%  { color: yellow;}
@@ -35,34 +90,55 @@
   font-weight: bold;
   animation: flashColors 1s infinite;
 }
-            */
+@media (max-width: 600px) {
+    .heading {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .head {
+        order: -1;
+        font-size: 1.5rem;
+    }
+
+    .part1, .part2, .part3 {
+        font-size: 1rem;
+    }
+}
+            
 		</style>
     </head>
     <body>
-        <img src="../images/Potential-Banner.jpg" alt="banner">
+        <img class="banner" src="../images/Potential-Banner.jpg" alt="banner">
         <header>
-                <nav>
-<h1 class="heading"> 
-            <a class="part1" href="index.html">Home |</a>
-            <a class="part2" href="Achievement.html">Achievements |</a>
-            <a class="part3" href="Proletarian.html">Proletarian</a>
-        <span class="head">Patrick Bassi</span>
+    <nav class="heading">
+        <a class="part1" href="index.html">Home</a>
+        <a class="part2" href="Achievement.html">Achievements</a>
+        <a class="part3" href="Proletarian.html">Proletarian</a>
 
-            <img class="logo1" src="../images/shopping_cart.gif" alt="shopping cart logo">
-            <img class="logo2" src="../images/Github-Logo.gif" alt="github logo">
-            <img class="logo3" src="../images/JC-logo.gif" alt="Picture of you.">
-</h1>
-        </nav>
+        <h1 class="head">Patrick Bassi</h1>
+
+        <img class="logo1" src="../images/shopping_cart.gif" alt="shopping cart logo">
+        <img class="logo2" src="../images/Github-Logo.gif" alt="github logo">
+        <img class="logo3" src="../images/JC-logo.gif" alt="Picture of you.">
+    </nav>
 </header>
 <main>
     <div class="images">
-        <img class=img1 src = "../images/dat-pic.jpg" alt = "pic with the boys">
-            <p>This is a picture of me and my friends, Paulo on the left and Avery in the middle, from my hometown of Santa Barbara! We're pretty awesome ik.</p>
-        <img class=img2 src = "../images/OIP.webp" alt = "pic with the boys">
-            <p>This is a picture of my favorite place, Solvang. It's this really awesome Danish town that's 45 minutes from Santa Barbara. They have really good food and it's so beautiful.</p>
-        <img class=img3 src = "../images/hard.png" alt = "pic with the boys">
-                <p>Just another pic of my friends, the guy on the right, Mason is someone I've known my whole life. We grew up together since preschool and we talk all the time.</p>
+        <img class="img1" src = "../images/dat-pic.jpg" alt = "pic with the boys">
+            
+        <img class="img2" src = "../images/OIP.webp" alt = "pic with the boys">
+            
+        <img class="img3" src = "../images/hard.png" alt = "pic with the boys">
+                
     </div>
+
+    <div class="texts">
+        <p class="t1">This is a picture of me and my friends, Paulo on the left and Avery in the middle, from my hometown of Santa Barbara! We're pretty awesome ik.</p>
+        <p class="t2">This is a picture of my favorite place, Solvang. It's this really awesome Danish town that's 45 minutes from Santa Barbara. They have really good food and it's so beautiful.</p>
+        <p class="t3">Just another pic of my friends, the guy on the right, Mason is someone I've known my whole life. We grew up together since preschool and we talk all the time.</p>
+    </div>
+
     <p>About Me: I aspire to do cybersecurity in either New York City or Los Angeles and work in the financial sector, like with JPMorgan or Wells Fargo. I specifically want to specialize in penetration testing and red teaming. I am from Santa Barbara, California and I am interested in rock climbing, reading, playing games, hanging out with friends, going to the beach and relaxing. I also have many personal projects and skits I’ve filmed, which are on the second page. On the third page, you can see my projects and what I’ve used my skills to actually do. I have been interested in computers since a young age. </p>
         <p>Top 3 Bands in my Humble Opinion</p>
         <ol>
@@ -73,8 +149,8 @@
     </main>
             <p>3 Fun Facts About Me</p>
         <ol>
-        <li>Latin</li>
-        <li>Latin</li>
+        <li>I can fold my ear into my ear canal</li>
+        <li></li>
         <li>Latin</li>
         </ol>
     <p></p>

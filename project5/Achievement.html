@@ -4,51 +4,134 @@
     <link rel ="stylesheet" href="styles.css">
     <meta charset = "utf-8">
         <title>Achievements and Work</title>
+        
         <style>
-            /*.part1 {display: flex; background-color: #cce5ff; border-radius: 1em;}
-            .address {flex: 1; order: 1; }
-            .links {flex: 3; order: 2;}
+.card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
-            .form {flex: 1;}
-            .map {flex: 2;}
-            .part1, .part2 {margin: 10px;}
+.card p {
+    flex: 1;
+    padding: 5px;
+}
 
-            .part2 {display: flex; background-color: #cce5ff; border-radius: 1em;}
-            .part2 article {padding: 20px;}
-            .article1, .article2, .article3 {margin: 10px;}
-            .article1 {flex: 2; order: 3; background-color: #cce5ff; border-radius: 1em;}
-            .article2 {flex: 1; order: 2;}
-            .article3 {flex: 1; order: 1;}*/
+.card img {
+    flex: 1;
+    width: 0;
+    height: 150px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+
+.card iframe {
+    flex: 1;
+    max-width: 50%;
+}
+
+/* Overall content layout */
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
         </style>
 </head>
 
 <body>
-<img class="logo1" src="../images/Potential-Banner.jpg" alt="banner">
-        <header>
-<nav>
-<h1 class="heading"> 
-            <a class="part1" href="index.html">Home |</a>
-            <a class="part2" href="Achievement.html">Achievements |</a>
-            <a class="part3" href="Proletarian.html">Proletarian</a>
-        <span class="head">Patrick Bassi</span>
+<!-- BANNER -->
 
-            <img class="logo1" src="../images/shopping_cart.gif" alt="shopping cart logo">
-            <img class="logo2" src="../images/Github-Logo.gif" alt="github logo">
-            <img class="logo3" src="../images/JC-logo.gif" alt="Picture of you.">
-</h1>
+    <img class="banner"
+         src="../images/Potential-Banner.jpg"
+         alt="banner">
+
+
+    <!-- HEADER -->
+
+    <header class="topbar">
+
+        <nav class="navigation">
+
+            <div class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="Achievement.html">Achievements</a>
+
+                <a href="Proletarian.html">Proletarian</a>
+
+            </div>
+
+
+            <h1 class="page-title">Home</h1>
+
+
+            <div class="nav-logos">
+
+                <img src="../images/Github-Logo.gif"
+                     alt="Github logo">
+
+                <img src="../images/JC-logo.gif"
+                     alt="Picture of you">
+
+                <img src="../images/shopping_cart.gif"
+                     alt="Shopping cart logo">
+
+            </div>
+
         </nav>
-</header>
-<img class="logo1" src="../images/mike.png" alt="jersey mikes">
-<p>I worked at Jersey Mikes in my hometown for 2 years, I even got to meet Bill Nye as pictured. I was a shift lead and I enjoed my coworkers. As a HARDWORKING individual, I’ve had my fair share of jobs. Over the summer, I got my real estate license and will work as my cousin (real estate agent) as an assistant.</p>
-<img class="logo1" src="../images/dog.png" alt="dog">
-<p>This was the dog I dogsat for over the summer, his name was Wally and he was so silly. He didn't do much all day and was very slow.</p>
-<img class="logo1" src="../images/tropy.png" alt="trophy">
-<p>As a Syracuse student, I have already experienced so much in terms of victory. I placed second in my 150+ person IST 195 class for my entrepreneurial idea, largely due to my INCREDIBLE idea. I received an A in this class. I have also taken IST 101 and received an A in this class as well. <a href="https://youtube.com/shorts/soCgLCTJv8o?si=DMSnywT8vSa7TMc8">Here's the link to my video that won me second.</a></p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9eQ9v3jO9Pg?si=8yE4qFlxPnjLSeN-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> /* i have no clue why this keeps coming up as an issue. If i could have help with this then that would be awesome, thanks!*/</iframe>
+    </header>
+    <main>
+<div class="layout">
+
+
+            <section class="content">
+
+
+                <div class="card">
+
+                    <p>
+I worked at Jersey Mikes in my hometown for 2 years, I even got to meet Bill Nye as pictured. I was a shift lead and I enjoed my coworkers. As a HARDWORKING individual, I’ve had my fair share of jobs. Over the summer, I got my real estate license and work for my cousin (real estate agent) as an assistant.
+                    </p>
+<img src="../images/mike.png"
+                         alt="Me and my coworkers with Bill Nye"> 
+
+<img class="logo1" src="../images/dog.png"
+                 alt="dog">
+                 <p>
+This was the dog I dogsat for over the summer, his name was Wally and he was so silly. He didn't do much all day and was very slow.
+                    </p>
+                    
+            
+                </div>
+
+                <div class="card">
+<p>
+As a Syracuse student, I have already experienced so much in terms of victory. I placed second in my 150+ person IST 195 class for my entrepreneurial idea, largely due to my INCREDIBLE idea. I received an A in this class. I have also taken IST 101 and received an A in this class as well. </p>
+
+
+        <img class="logo1" src="../images/tropy.png" 
+            alt="trophy">
+
+                    
+
+
+                    </p>
+
+                
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9eQ9v3jO9Pg?si=8yE4qFlxPnjLSeN-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <p>This is a video that I filmed and edited along with my friend Jack. </p>
+
+</div>
+
+    <a href="https://youtube.com/shorts/soCgLCTJv8o?si=DMSnywT8vSa7TMc8">Here's the link to my video that won me second.</a>
     
-    
-        
+</main>      
 </body>
 </html>

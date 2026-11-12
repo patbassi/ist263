@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Picker</title>
+    <script>
+        function changeColor() {
+            document.getElementById("wholepage").style.backgroundColor = document.getElementById("picker").value;
+        }
+    </script>
+    <style>
+
+    </style>
+</head>
+<body id="wholepage">
+<form>
+    <input onchange="changeColor();" id="picker" type="color">
+</form>
+
+</body>
+</html>

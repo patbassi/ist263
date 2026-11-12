@@ -1,0 +1,99 @@
+               /* GENERAL PAGE SETTINGS */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+
+        /* BANNER */
+
+        .banner {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+       
+       /* HEADER ANIMATION */
+
+        @keyframes flashColors {
+
+            0% {
+                color: rgb(231, 13, 115);
+            }
+
+            50% {
+                color: yellow;
+            }
+
+            100% {
+                color: rgb(231, 13, 115);
+            }
+
+        }
+        /* HEADER AND NAVIGATION */
+
+        .topbar {
+            width: 100%;
+            padding: 10px;
+            border-bottom: 1px solid #555;
+        }
+
+        .navigation {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 15px;
+            min-height: 45px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            background-color: #202b36;
+            color: white;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 6px;
+            font-size: clamp(0.7rem, 1vw, 1rem);
+            text-align: center;
+        }
+
+        .nav-links a:hover {
+            background-color: #455565;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: clamp(1.2rem, 2vw, 2rem);
+            margin: 0;
+            animation: flashColors 1s steps(1) infinite;
+        }
+
+        .nav-logos {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-logos img {
+            width: clamp(25px, 3vw, 40px);
+            height: clamp(25px, 3vw, 40px);
+            object-fit: contain;
+        }
+
+        /* FOOTER */
+
+        footer {
+            padding: 20px;
+            text-align: center;
+        }

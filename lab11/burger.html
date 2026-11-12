@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>hamburger</title>
+    <!--
+    CSS
+    1. large, no burger
+    2. small, yes burger
+    3. larger, no X
+    4. small, show X
+    5. large, links side by side
+    6. small, links stack
+    JS
+    7. click burger, links should show
+    8. clink x, hide links
+    -->
+    <script>
+        function showNav() {
+            document.getElementById("navItems").style.display = "block";
+        }
+                function hideNav() {
+            document.getElementById("navItems").style.display = "none";
+        }
+    </script>
+    <style>
+        #burger {width: 40px;}
+        @media only screen and (min-width: 900px) {
+            #burger, #close {display: none;}
+        }
+        @media only screen and (max-width: 899px) {
+            a {
+                display: block;
+            }
+            #navitems {
+                display: none;
+            }
+        }
+        .firstRow {display: flex; justify-content: space-between;}
+    </style>
+
+</head>
+<body>
+<div class="firstRow">
+ <div><img id="burger" src = "http://laferger.github.io/ist263/images/hamburger.png" alt="burger" onclick="showNav();"></div>
+    <div id="close" onclick="hideNav();">X</div>
+</div>
+    <nav id="navitems">
+        <a href="">About</a>
+        <a href="">Skills</a>
+        <a href="">Contact</a>
+    </nav>
+</body>
+</html>

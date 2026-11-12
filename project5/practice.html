@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="styles.css">
+
+    <style>
+
+        /* MAIN PAGE LAYOUT */
+        .layout {
+            display: grid;
+            grid-template-columns: minmax(100px, 1fr) minmax(0, 5fr) minmax(100px, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* SIDE BARS */
+
+        .sidebar {
+            font-size: 0.8em;
+            align-self: center;
+        }
+
+        .sidebar ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .sidebar li {
+            padding: 12px 5px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* CENTER IMAGE SECTION */
+        .content {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            min-width: 0;
+        }
+
+        .card img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 1 / 1.1;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .card p {
+            font-size: clamp(0.7em, 1vw, 1em);
+            line-height: 1.4;
+            overflow-wrap: anywhere;
+        }
+        /* ABOUT ME SECTION */
+
+        .about {
+            padding: 20px;
+            line-height: 1.6;
+        }
+        /* BOTTOM BANDS SECTION */
+
+        .bands {
+            padding: 20px;
+        }
+        /* MEDIUM SCREENS */
+
+        @media (max-width: 800px) {
+
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                align-self: auto;
+            }
+
+            .content {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+        }
+        /* SMALL SCREENS */
+
+        @media (max-width: 500px) {
+
+            .navigation {
+                grid-template-columns: 1fr;
+                justify-items: center;
+            }
+
+            .nav-links {
+                justify-content: center;
+            }
+
+            .nav-logos {
+                justify-content: center;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <!-- BANNER -->
+
+    <img class="banner"
+         src="../images/Potential-Banner.jpg"
+         alt="banner">
+
+    <!-- HEADER -->
+
+    <header class="topbar">
+        <nav class="navigation">
+
+            <div class="nav-links">
+
+                <a href="index.html">Home</a>
+                <a href="Achievement.html">Achievements</a>
+                <a href="Proletarian.html">Proletarian</a>
+
+            </div>
+
+            <h1 class="page-title">Home</h1>
+            <div class="nav-logos">
+
+                <img src="../images/Github-Logo.gif"
+                     alt="Github logo">
+
+                <img src="../images/JC-logo.gif"
+                     alt="Picture of you">
+
+                <img src="../images/shopping_cart.gif"
+                     alt="Shopping cart logo">
+
+            </div>
+
+        </nav>
+
+    </header>
+    <main>
+        <div class="layout">
+
+
+            <!-- LEFT  -->
+
+            <aside class="sidebar">
+
+                <p>Favorite Bands:</p>
+
+                <ul>
+
+                    <li>The Strokes</li>
+
+                    <li>Radiohead</li>
+
+                    <li>The Cure</li>
+
+                </ul>
+
+            </aside>
+
+
+
+            <!-- CENTER IMAGE  -->
+
+            <section class="content">
+
+                <div class="card">
+
+                    <img src="../images/dat-pic.jpg"
+                         alt="Picture of me and my friends">
+
+                    <p>
+                        This is a picture of me and my friends,
+                        Paulo on the left and Avery in the middle,
+                        from my hometown of Santa Barbara!
+                        We're pretty awesome ik.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <img src="../images/OIP.webp"
+                         alt="Solvang">
+
+                    <p>
+                        This is a picture of my favorite place,
+                        Solvang. It's this really awesome Danish
+                        town that's 45 minutes from Santa Barbara.
+                        They have really good food and it's so beautiful.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="../images/hard.png"
+                         alt="Picture of my friends">
+
+                    <p>
+                        Just another pic of my friends, the guy
+                        on the right, Mason is someone I've known
+                        my whole life. We grew up together since
+                        preschool and we talk all the time.
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- RIGHT -->
+
+            <aside class="sidebar">
+
+                <p>Fun Facts:</p>
+
+                <ul>
+
+                    <li>I used to play the drums</li>
+
+                    <li>I've been to Japan</li>
+
+                    <li>I've never broken a bone WIP boring</li>
+
+                </ul>
+
+            </aside>
+
+        </div>
+
+        <!-- ABOUT ME -->
+
+        <section class="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                I aspire to do cybersecurity in either New York City or Los Angeles and work in the financial sector, like with JPMorgan or Wells Fargo. I specifically want to specialize in penetration testing and red teaming. I am from Santa Barbara, California and I am interested in rock climbing, reading, playing games, hanging out with friends, going to the beach and relaxing. I also have many personal projects and skits I've filmed, which are on the second page. On the third page, you can see my projects and what I've used my skills to actually do. I have been interested in computers since a young age.
+            </p>
+        </section>
+
+        <!-- TOP THREE BANDS -->
+
+        <section class="bands">
+
+            <h2>Top 3 Bands in my Humble Opinion</h2>
+
+            <ol>
+
+                <li>The Strokes</li>
+                <li>Radiohead</li>
+                <li>The Cure</li>
+
+            </ol>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <hr>
+
+        <article>
+
+            <p>
+                "I dont know who ordered this... I would never
+                order this much pizza." - Tonka Jahari
+            </p>
+
+        </article>
+
+        <p>© 2026</p>
+    </footer>
+</body>
+
+</html>
