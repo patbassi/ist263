@@ -7,6 +7,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            background-color: #455565;
         }
 
 
@@ -40,7 +41,7 @@
         .topbar {
             width: 100%;
             padding: 10px;
-            border-bottom: 1px solid #555;
+            border-bottom: 1px solid #5b92e5;
         }
 
         .navigation {
@@ -59,7 +60,7 @@
 
         .nav-links a {
             background-color: #202b36;
-            color: white;
+            color: #5b92e5;
             text-decoration: none;
             padding: 8px 20px;
             border-radius: 6px;
@@ -97,3 +98,5 @@
             padding: 20px;
             text-align: center;
         }
+
+        

@@ -7,36 +7,40 @@
         
         <style>
 .card {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 240px 240px 1fr;
     align-items: center;
-    gap: 10px;
-    width: 100%;
-    margin-bottom: 20px;
+    column-gap: 10px;
+    row-gap: 0;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card p {
-    flex: 1;
     padding: 5px;
+    margin: 0;
+    min-width: 0;
 }
 
 .card img {
-    flex: 1;
-    width: 0;
+    width: 100%;
     height: 150px;
     object-fit: cover;
-    padding: 5px;
+    padding: 0;
+    display: block;
 }
-
 
 .card iframe {
-    flex: 1;
-    max-width: 50%;
+    width: 100%;
+    height: 200px;
+    border: none;
 }
 
-/* Overall content layout */
 .content {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 }
         </style>
@@ -98,10 +102,10 @@
                     <p>
 I worked at Jersey Mikes in my hometown for 2 years, I even got to meet Bill Nye as pictured. I was a shift lead and I enjoed my coworkers. As a HARDWORKING individual, I’ve had my fair share of jobs. Over the summer, I got my real estate license and work for my cousin (real estate agent) as an assistant.
                     </p>
-<img src="../images/mike.png"
+<img class = "logo1" src="../images/mike.png"
                          alt="Me and my coworkers with Bill Nye"> 
 
-<img class="logo1" src="../images/dog.png"
+<img class="logo2" src="../images/dog.png"
                  alt="dog">
                  <p>
 This was the dog I dogsat for over the summer, his name was Wally and he was so silly. He didn't do much all day and was very slow.
@@ -111,22 +115,25 @@ This was the dog I dogsat for over the summer, his name was Wally and he was so 
                 </div>
 
                 <div class="card">
-<p>
-As a Syracuse student, I have already experienced so much in terms of victory. I placed second in my 150+ person IST 195 class for my entrepreneurial idea, largely due to my INCREDIBLE idea. I received an A in this class. I have also taken IST 101 and received an A in this class as well. </p>
 
+    <p>
+        As a Syracuse student, I have already experienced so much in terms of victory. I placed second in my 150+ person IST 195 class for my entrepreneurial idea, largely due to my INCREDIBLE idea. I received an A in this class. I have also taken IST 101 and received an A in this class as well.
+    </p>
 
-        <img class="logo1" src="../images/tropy.png" 
-            alt="trophy">
+    <img src="../images/tropy.png"
+         alt="Trophy">
 
-                    
+    <iframe
+src="https://www.youtube.com/embed/9eQ9v3jO9Pg"
+    title="YouTube video player"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+    </iframe>
 
-
-                    </p>
-
-                
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9eQ9v3jO9Pg?si=8yE4qFlxPnjLSeN-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<p>This is a video that I filmed and edited along with my friend Jack. </p>
+    <p>
+        This is a video that I filmed and edited along with my friend Jack.
+    </p>
 
 </div>
 

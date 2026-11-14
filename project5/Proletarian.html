@@ -4,37 +4,107 @@
   <link rel ="stylesheet" href="styles.css">
     <title>Proletarian</title>
     <style>
-        table, th, td {border: 3px solid purple;}
+      .content {
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.uno, .dos, .tres {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+ .content img {
+  width: 40%;
+  height: auto;
+ }
+ .content p {
+  width: 60%;
+ }
+ .dos {
+  flex-direction: row-reverse;
+  padding: 20px;
+ }
     </style>
 </head>
-<body>
-<img class="logo1" src="../images/Potential-Banner.jpg" alt="banner">
-        <header>
-<nav>
-<h1 class="heading"> 
-            <a class="part1" href="index.html">Home |</a>
-            <a class="part2" href="Achievement.html">Achievements |</a>
-            <a class="part3" href="Proletarian.html">Proletarian</a>
-        <span class="head">Patrick Bassi</span>
 
-            <img class="logo1" src="../images/shopping_cart.gif" alt="shopping cart logo">
-            <img class="logo2" src="../images/Github-Logo.gif" alt="github logo">
-            <img class="logo3" src="../images/JC-logo.gif" alt="Picture of you.">
-</h1>
+<body>
+<!-- BANNER -->
+
+    <img class="banner"
+         src="../images/Potential-Banner.jpg"
+         alt="banner">
+
+
+    <!-- HEADER -->
+
+    <header class="topbar">
+
+        <nav class="navigation">
+
+            <div class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="Achievement.html">Achievements</a>
+
+                <a href="Proletarian.html">Proletarian</a>
+
+            </div>
+
+
+            <h1 class="page-title">Home</h1>
+
+
+            <div class="nav-logos">
+
+                <img src="../images/Github-Logo.gif"
+                     alt="Github logo">
+
+                <img src="../images/JC-logo.gif"
+                     alt="Picture of you">
+
+                <img src="../images/shopping_cart.gif"
+                     alt="Shopping cart logo">
+
+            </div>
+
         </nav>
-</header>
+
+    </header>
 
 <main>
-  <img class="logo1" src="../images/climb.png" alt="climbing pic">
-<p>I love to climb, I am a huge fan of going with my friends or solo. It can be so fun to climb around and just be free like that.</p>
+  <section class="content">
+    <div class="uno">
+  <img src="../images/climb.png" alt="climbing pic">
+<p class="uno">I love to climb, I am a huge fan of going with my friends or solo. It can be so fun to climb around and just be free like that. My best performance was when I flashed a V5. The V system is just a rating for how difficult a climb is, so a V0 is easiest. Flashing means that I did it on my first try. So, when I say that I flashed a V5, that means that I did a V5 on my first try!</p>
+</div>
 
 
+<div class="dos">
+<img src="../images/stronk.jpg" alt="strokes">
+<div>
+<p>I am a HUGE fan of the strokes, I went to their concert in NYC and it was so lit. All their albums are so good. 
+ <br> My ranking goes:</p>
 
-<img class="logo1" src="../images/stronk.jpg" alt="strokes">
-<p>I am a HUGE fan of the strokes, I went to their concert in NYC and it was so lit. all their albums are so good imo, check the ranking out.</p>
+<ol>
+  <li>Room On Fire: 10/10</li>
+  <li>Is This It: 10/10</li>
+  <li>The New Abnormal: 10/10</li>
+  <li>Comedown Machine: light 9/10</li>
+  <li>Reality Awaits: strong 8.5/10</li>
+  <li>First Impressions of Earth: strong 7.5/10</li>
+  <li>Angles: light 7/10</li>
+</ol> 
+</div>
+</div>
 
-<img class="logo1" src="../images/cocao.png" alt="strokes">
+<div class="tres">
+<img src="../images/cocao.png" alt="cup of hot chocolate">
 <p>This is just a picture of a hot chocolate I got in NYC, it was so cool and I love sweets like that. Also a huge coffee drinker and I believe in mocha supremacy - as evidenced by my love of hot chocolate.</p>
+</div>
+</section>
 </main>
 </body>
 </html>
