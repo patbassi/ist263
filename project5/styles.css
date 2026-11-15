@@ -52,6 +52,15 @@
             min-height: 45px;
         }
 
+         .clicker {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+        .clicker:hover {
+    transform: scale(1.1);
+}
+
         .nav-links {
             display: flex;
             gap: 12px;
@@ -64,8 +73,9 @@
             text-decoration: none;
             padding: 8px 20px;
             border-radius: 6px;
-            font-size: clamp(0.7rem, 1vw, 1rem);
+            font-size: clamp(1rem, 1.5vw, 1.5rem);
             text-align: center;
+            font-family: 'VT323', monospace;
         }
 
         .nav-links a:hover {
@@ -74,7 +84,8 @@
 
         .page-title {
             text-align: center;
-            font-size: clamp(1.2rem, 2vw, 2rem);
+            font-family: 'VT323', monospace;
+            font-size: clamp(2rem, 3vw, 3rem);
             margin: 0;
             animation: flashColors 1s steps(1) infinite;
         }
@@ -92,6 +103,11 @@
             object-fit: contain;
         }
 
+        .secrettext {
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
+}
         /* FOOTER */
 
         footer {
