@@ -6,15 +6,57 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Achievements and Work</title>
         
         <style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.layout {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
 .card {
     display: grid;
-    grid-template-columns: 1fr 240px 240px 1fr;
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 240px)
+        minmax(0, 240px)
+        minmax(0, 1fr);
+
     align-items: center;
-    column-gap: 10px;
-    row-gap: 0;
+    column-gap: 15px;
+    row-gap: 15px;
+
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
@@ -24,27 +66,115 @@
     padding: 5px;
     margin: 0;
     min-width: 0;
+    overflow-wrap: break-word;
 }
 
 .card img {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    padding: 0;
     display: block;
 }
 
 .card iframe {
     width: 100%;
-    height: 200px;
+    aspect-ratio: 16 / 9;
+    height: auto;
     border: none;
 }
 
-.content {
+@media (max-width: 850px) {
+
+    .card {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        gap: 15px;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    .layout {
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .card {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .card p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    .card iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        height: auto;
+    }
+
+    .layout {
+        padding: 10px;
+    }
+
+}
+
+.navigation {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-links,
+.nav-logos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-logos img {
+    max-width: 50px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+
+    .navigation {
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .page-title {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .nav-logos {
+        justify-content: center;
+    }
+
 }
         </style>
 </head>
@@ -67,7 +197,7 @@
                 <a href="Proletarian.html">Proletarian</a>
             </div>
 
-            <h1 class="page-title">Home</h1>
+            <h1 class="page-title">Achievements</h1>
 
             <div class="nav-logos">
 
@@ -136,6 +266,7 @@ src="https://www.youtube.com/embed/9eQ9v3jO9Pg"
 
     <a href="https://youtube.com/shorts/soCgLCTJv8o?si=DMSnywT8vSa7TMc8">Here's the link to my video that won me second.</a>
     
+</div>
 </main>      
 </body>
 </html>

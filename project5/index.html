@@ -112,11 +112,50 @@
             }
         }
 
+        #login-screen {
+            position:fixed;
+            inset: 0;
+            background: black;
+            z-index: 9999;
+            overflow: hidden;
+        }
+
+        #dvd-container {
+            position: absolute;
+            text-align: center;
+            color: cyan;
+        }
+
+        #dvd-container h1{
+            font-size: 60px;
+            font-weight: bold;
+            margin-top: 0;
+            font-family: 'VT323', monospace;
+        }
+
+        #continue-btn {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
 
 <body>
+    <!-- animation -->
+
+    <div id="login-screen">
+        <div id="dvd-container">
+            <h1>DVD</h1>
+            <button id="continue-btn">Continue</button>
+        </div>
+    </div>
+
+
+
     <!-- BANNER -->
 
     <img class="banner"
@@ -237,6 +276,7 @@
         </article>
         <p>© 2026</p>
     </footer>
+    <script src="dvd-animation.js"></script>
 </body>
 
 </html>
